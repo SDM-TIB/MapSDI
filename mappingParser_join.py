@@ -263,9 +263,9 @@ def handler():
 	
 	for k,v in column_result1.items():
 		argValue = " " + str(k) + " " + str(v) + " " + str(column_result2[k]) + " " + output
-		bashCommand = "/home/jozashoori/External/Script/mapping/bash/workflow_join.sh" + argValue
+		bashCommand = "/bash/workflow_join.sh" + argValue
 		subprocess.call(bashCommand, shell=True)	
-	runBash = "/home/jozashoori/External/Script/mapping/bash/run.sh" + " " + output + " " + header1 + " " + header2	
+	runBash = "/bash/run.sh" + " " + output + " " + header1 + " " + header2	
 	subprocess.call(runBash, shell=True)	
 
 	#end = time.time()

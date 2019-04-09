@@ -229,9 +229,9 @@ def handler():
 
 	for k,v in column_result.items():
 		argValue = " " + str(k) + " " + str(v) + " " + output
-		bashCommand = "/home/jozashoori/External/Script/mapping/bash/workflow.sh" + argValue
+		bashCommand = "/bash/workflow.sh" + argValue
 		subprocess.call(bashCommand, shell=True)	
-	runBash = "/home/jozashoori/External/Script/mapping/bash/run.sh" + " " + output + " " + header	
+	runBash = "/bash/run.sh" + " " + output + " " + header	
 	subprocess.call(runBash, shell=True)	
 
 	#end = time.time()
