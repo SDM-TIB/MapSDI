@@ -19,5 +19,5 @@ cat $OUTPUT/header.csv $OUTPUT/attribute_column_wh.csv > $OUTPUT/attribute_colum
 #cd /bash/
 #java -jar /RDFizers/rmlmapper-java/rmlmapper-4.3.3-r92.jar -m /resources/transcript_rmlmapper.ttl -o /resources/output/transcript.nt
 
-python3 /RDFizers/rdfizer_tib/rdfizer/rdfizer/run_rdfizer.py /home/jozashoori/External/Script/mapping/bash/conf.ini
+python3 /RDFizers/rdfizer_tib/rdfizer/rdfizer/run_rdfizer.py /conf.ini
 
